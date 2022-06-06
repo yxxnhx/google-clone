@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/google.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <ul class="utill">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">이미지</a></li>
+                <li class="apps-icon"><a href="#"><img src="img/apps_black_24dp.svg" alt=""></a>
+                    <ul class="apps-list">
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb account">google 계정</div>
+                            <p>google 계정</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb sear">검색</div>
+                            <p>검색</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb map">지도</div>
+                            <p>지도</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb youtube">YouTube</div>
+                            <p>YouTube</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb play">Play</div>
+                            <p>Play</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb news">뉴스</div>
+                            <p>뉴스</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb gmail">Gmail</div>
+                            <p>Gmail</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb meet">Meet</div>
+                            <p>Meet</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb chat">채팅</div>
+                            <p>채팅</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb call">주소록</div>
+                            <p>주소록</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb drive">드라이브</div>
+                            <p>드라이브</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb calender">캘린더</div>
+                            <p>캘린더</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb trans">번역</div>
+                            <p>번역</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb photo">사진</div>
+                            <p>사진</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb duo">Duo</div>
+                            <p>Duo</p>
+                        </a></li>
+                        <li class="apps-box"><a href="#">
+                            <div class="apps-thumb shop">쇼핑</div>
+                            <p>쇼핑</p>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="user"><a href="#"><img src="img/account_circle_black_24dp.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="inner">
+            <h1 class="logo">
+                <img src="img/google_logo.svg" alt="">
+            </h1>
+            <div class="search-box">
+                <a href="#" class="mic-icon"><img src="img/googlemic_clr_24px.svg" alt="마이크"></a>
+                <input type="search" id="search" placeholder="Google 검색 또는 URL 입력"><label for="search"></label>
+                <a href="#" class="search-icon"><img src="img/search.svg" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <script>
+        const appsIcon = document.querySelector('.apps-icon');
+        const appsList = document.querySelector('.apps-list');
+
+        appsIcon.addEventListener('click', () => {
+            appsList.classList.toggle('on');
+        })
+    </script>
+</body>
+</html>
